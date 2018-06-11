@@ -9,12 +9,13 @@ class Post extends Component {
         return (
             <div>
                 <h1>{this.props.title}</h1>
-                <Stats commentCount={2} />
+                <Stats commentCount={2} voteCount={60} />
                 <p>
                     {this.props.description}
                 </p>
                 <p>
                     <span>{this.props.timestamp}</span>
+                     {" "}
                     <span>{this.props.tags}</span>
                 </p>
             </div>
