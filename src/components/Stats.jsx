@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import emptyTriangle from './assets/empty-triangle.svg';
 import fillTriangle from './assets/fill-triangle.svg';
 import comment from './assets/comment.svg';
+import './stats.css';
 class Stats extends Component {
     state = {
         voted: false,
@@ -24,7 +25,7 @@ class Stats extends Component {
 
     render() {
         return (
-            <div>
+            <div className="news__stats">
                 <div onClick={this.upvote}>
                     <img className="icon" src={this.state.voted ? fillTriangle : emptyTriangle } alt="vote icon" /><span className={"triangle"} >{this.state.voteCount}</span>
                 </div>

@@ -8,15 +8,13 @@ class Post extends Component {
     render() {
         return (
             <div>
+<Stats commentCount={2} voteCount={60} />
                 <h1>{this.props.title}</h1>
-                <Stats commentCount={2} voteCount={60} />
                 <p>
                     {this.props.description}
                 </p>
                 <p>
-                    <span>{this.props.timestamp}</span>
-                     {" "}
-                    <span>{this.props.tags}</span>
+                    {this.props.timestamp} {this.props.tags}
                 </p>
             </div>
         );
