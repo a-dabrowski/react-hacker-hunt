@@ -25,7 +25,7 @@ class Stats extends Component {
 
     render() {
         return (
-            <div className="news__stats">
+            <div className="stats">
                 <div onClick={this.upvote}>
                     <img className="icon" src={this.state.voted ? fillTriangle : emptyTriangle } alt="vote icon" /><span className={"triangle"} >{this.state.voteCount}</span>
                 </div>

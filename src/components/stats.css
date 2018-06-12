@@ -1,4 +1,9 @@
-.news__stats {
-    display: inline-block;
+.stats {
+    /* display: inline-block; */
     /* float: left; */
+    height: 3rem;
+    padding: .5rem;
+    width: 3em;
+    text-align: left;
 }
+
